@@ -1,0 +1,25 @@
+header {
+    display: flex;
+    justify-content: center;
+};
+
+.gridbox {
+    display: flex;
+    justify-content: center;
+    border: 5px solid black;
+    min-height: auto;
+    min-width: auto;
+};
+
+.gridRow {
+    display: grid;
+}
+
+.cell {
+    display: inline-block;
+    border: 1px solid black;
+    margin: 1px;
+    min-width: 20px;
+    min-height: 20px;
+    background-color: lightslategray;
+};

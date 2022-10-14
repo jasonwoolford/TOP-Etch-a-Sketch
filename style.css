@@ -1,14 +1,18 @@
 header {
     display: flex;
     justify-content: center;
-};
+}
 
-.gridbox {
+main {
     display: flex;
     justify-content: center;
+}
+.gridbox {
+    display: grid;
+    justify-content: center;
     border: 5px solid black;
-    min-height: auto;
-    min-width: auto;
+    max-height: 916px;
+    max-width: 916px;
 };
 
 .gridRow {
@@ -16,10 +20,16 @@ header {
 }
 
 .cell {
-    display: inline-block;
+    display: inline-flex;
     border: 1px solid black;
     margin: 1px;
-    min-width: 20px;
-    min-height: 20px;
     background-color: lightslategray;
-};
+    max-width: auto;
+    max-height: auto;
+    min-height: 10px;
+    min-width: 10px;
+}
+
+.cell:hover {
+    background-color: red;
+}
